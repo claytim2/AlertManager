@@ -1,0 +1,35 @@
+﻿@using Infra
+@using Localization.Web
+<script>
+    var daterangepicker_daysOfWeek = [
+        @{foreach (var day in Enum.GetValues(typeof(EnumLists.EDaysOfWeek)))
+            {
+                @((int)day == 0 ? " " : ",") @:"@(EnumLists.GetLocalizedDisplay<EnumLists.EDaysOfWeek>(day.ToString()).Substring(0, 3))"
+            }
+        }];
+    var daterangepicker_monthNames = [
+        @{foreach (var month in Enum.GetValues(typeof(EnumLists.EMonths)))
+            {
+                @((int)month == 1 ? " " : ",") @:"@(EnumLists.GetLocalizedDisplay<EnumLists.EMonths>(month.ToString()))"
+            }
+        }];
+
+    var daterangepicker_ranges = {};
+    daterangepicker_ranges["@ResLabels.Today"] = [moment().startOf('day'), moment().endOf('day')];
+    daterangepicker_ranges["@ResLabels.Yesterday"] = [moment().subtract(1, 'days').startOf('day'), moment().subtract(1, 'days').endOf('day')];
+    daterangepicker_ranges["@(string.Format(ResLabels.LastDays, "7"))"] = [moment().subtract(6, 'days').startOf('day'), moment().endOf('day')];
+    daterangepicker_ranges["@(string.Format(ResLabels.LastDays, "30"))"] = [moment().subtract(29, 'days').startOf('day'), moment().endOf('day')];
+    daterangepicker_ranges["@ResLabels.ThisMonth"] = [moment().startOf('month'), moment().endOf('month')];
+    daterangepicker_ranges["@ResLabels.LastMonth"] = [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')];
+
+    var daterangepicker_labels = [
+        "@ResLabels.DateFormat",
+        "@ResLabels.Apply",
+        "@ResLabels.Cancel",
+        "@ResLabels.From",
+        "@ResLabels.To",
+        "@ResLabels.Custom",
+        "@ResLabels.DateTimeFormat",
+    ];
+
+</script>

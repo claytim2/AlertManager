@@ -1,0 +1,225 @@
+﻿.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+.requiredField {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    /*color: #b94a48;*/
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.btn.btn-rounded {
+    border-radius: 9999px;
+}
+
+.btn-rounded.btn-flat {
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+    .btn-rounded.btn-flat, .btn-rounded.btn-flat:focus, .btn-rounded.btn-flat:hover {
+        border-bottom-width: 2px;
+    }
+
+        .btn-rounded.btn-flat.btn-lg, .btn-rounded.btn-flat.btn-lg:focus, .btn-rounded.btn-flat.btn-lg:hover {
+            border-bottom-width: 3px;
+        }
+
+        .btn-rounded.btn-flat:active {
+            margin-top: 1px;
+        }
+
+        .btn-rounded.btn-flat.btn-outline.btn:hover, .btn-rounded.btn-flat.btn:focus, .btn-rounded.btn-flat.btn:hover {
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-right-color: transparent;
+        }
+
+        .btn-rounded.btn-flat.btn-outline:focus {
+            border-color: #e0e0e0;
+            border-color: rgba(0, 0, 0, .12);
+        }
+
+        .btn-rounded.btn-flat.btn-outline.dark:focus {
+            border-color: #595959;
+            border-color: rgba(255, 255, 255, .12);
+        }
+
+.disable-animations, .disable-animations * {
+    /* CSS transitions */
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /* CSS transforms */
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /* CSS animations */
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    animation: none !important;
+}
+
+.icheck-minimal-scheme {
+}
+
+.icheck-flat-scheme {
+}
+
+.icheck-line-scheme {
+}
+
+.fullCalendar_processing {
+    position: absolute;
+    z-index: 999;
+    top: 280px;
+    width: 200px;
+    text-align: center;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -o-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+.iconInside { position: relative; }
+.iconInside input { text-indent: 20px;}
+.iconInside .fa { 
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* Hide the clear and spin buttons from date input */
+input[type="date"]::-webkit-clear-button, input[type="week"]::-webkit-clear-button, input[type="month"]::-webkit-clear-button,
+input[type="date"]::-webkit-inner-spin-button, input[type="week"]::-webkit-inner-spin-button, input[type="month"]::-webkit-inner-spin-button
+ {
+ -webkit-appearance: none;
+  display: none;
+}
+
+.highcharts-tooltip> span {
+    height:auto;
+    min-width:300px;
+    white-space:normal !important;
+}
+
+.program-name{
+    /*border-bottom:2px;
+    border-bottom-style:solid;
+    border-bottom-color:#d2d6de;*/
+    
+    padding-bottom: 0px;
+    padding-left: 1px;
+    color:#ffffff;
+}
+
+table.dataTable tbody td {
+  vertical-align: middle;
+}
+
+.modal-bigger {
+    width: 90%;
+}
+
+/* file input bootstrap */
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+input[readonly] {
+  background-color: white !important;
+  cursor: text !important;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+/* VIDEO TUTORIAIS */
+#modal-video .modal-backdrop.in {
+    filter: alpha(opacity=7);
+    opacity: 0.7;
+}
+
+#modal-video .modal-content {
+    background: none;
+    border: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#modal-video .modal-body {
+    padding: 0 25px 25px 25px;
+}
+
+#modal-video .modal-header {
+    padding: 25px 25px 15px 25px;
+    text-align: right;
+}
+
+#modal-video .modal-header, #modal-video .modal-footer {
+    border: 0;
+}
+
+#modal-video .modal-header .close {
+    float: none;
+    margin: 0;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 300;
+    text-shadow: none;
+    opacity: 1;
+}
+
+.center-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+

@@ -1,0 +1,67 @@
+﻿@using Localization.Web
+@using Infra
+@using Web.Business
+@model Model.DatabaseContext.Log
+
+<div class="modal-content">
+
+    @using (Html.BeginForm(ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString(),
+                        FormMethod.Post,
+                        new { id = "edit" }))
+    {
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel" class="modal-title">@ViewBag.Titulo</h3>
+        </div>
+        <div class="modal-body">
+
+            @Html.AntiForgeryToken()
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group ">
+                        @Html.LabelFor(model => model.DateTime, new {@class = "control-label"}):
+                        @Html.DisplayTextFor(model => model.DateTime)
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="form-group ">
+                        @Html.LabelFor(model => model.UserName, new { @class = "control-label" }):
+                        @Html.DisplayTextFor(model => model.UserName)
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group ">
+                        @Html.LabelFor(model => model.IpAddress, new { @class = "control-label" }):
+                        @Html.DisplayTextFor(model => model.IpAddress)
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="pre-scrollable">
+                        @if (new List<EnumLists.ELogType> { EnumLists.ELogType.AddRecord, EnumLists.ELogType.UpdateRecord, EnumLists.ELogType.DeleteRecord }.Contains(Model.LogType))
+                        {
+                            @Html.Raw(Model.Description.Replace(Environment.NewLine, "<br/>").Replace(" ", "&nbsp;&nbsp;&nbsp;"))
+                        }
+                        else
+                        {
+                            @Html.Raw(Model.Description.Replace(Environment.NewLine, "<br />"))
+                        }
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-group-sm">
+                <input type="button" class="btn btn-warning" id="Close" value="@ResLabels.Close" data-dismiss="modal" />
+            </div>
+        </div>
+    }
+</div>
+<script>
+    var Locked = ("@ViewBag.Locked") === "True";
+</script>
+@Html.Raw(WebFunctions.JavascriptFileImport("~/Resources/scriptViews/Logs/_Edit.js"))

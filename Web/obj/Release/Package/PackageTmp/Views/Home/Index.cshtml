@@ -1,0 +1,96 @@
+﻿@using Localization.Web
+@using Web.Business
+@model Model.AbsModels.CountViewModel
+
+<div class="container">
+    <div class="row text-center">
+        <div class="col-lg-4">
+            <div class="small-box bg-aqua">
+                <div class="inner">
+                    @ResMenu.Workday
+                    <br />
+                    <span id="workdayCount">@ViewBag.WorkdayCount</span> @ResLabels.Total @ResLabels.Actions
+                    <br /><br /><br />
+                </div>
+                <div class="icon">
+                    <i class="fa fa-users"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="small-box bg-orange">
+                <div class="inner">
+                    @ResMenu.GapAnalysis
+                    <br />
+                    <span id="gapanalysisCount">@ViewBag.GapAnalysisCount</span> @ResLabels.Total @ResLabels.Actions
+                    <br /><br /><br />
+                </div>
+                <div class="icon">
+                    <i class="fa fa-users"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="small-box bg-yellow">
+                <div class="inner">
+                    @ResMenu.Jos
+                    <br />
+                    <span id="josCount">@ViewBag.JosCount</span> @ResLabels.Total @ResLabels.Actions
+                    <br /><br /><br />
+                </div>
+                <div class="icon">
+                    <i class="fa fa-users"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-lg-4">
+            <div class="small-box bg-aqua-active">
+                <div class="inner">
+                    @ResMenu.LpaBel
+                    <br />
+                    <span id="lpabelCount">@ViewBag.LpaBelCount</span> @ResLabels.Total @ResLabels.Actions
+                    <br /><br /><br />
+                </div>
+                <div class="icon">
+                    <i class="fa fa-users"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="small-box bg-orange-active">
+                <div class="inner">
+                    @ResMenu.LpaVls
+                    <br />
+                    <span id="lpavlsCount">@ViewBag.LpaVlsCount</span> @ResLabels.Total @ResLabels.Actions
+                    <br /><br /><br />
+                </div>
+                <div class="icon">
+                    <i class="fa fa-users"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="small-box bg-yellow-active">
+                <div class="inner">
+                    @ResMenu.Rh
+                    <br />
+                    <span id="rhCount">@ViewBag.RhCount</span> @ResLabels.Total @ResLabels.Actions
+                    <br /><br /><br />
+                </div>
+                <div class="icon">
+                    <i class="fa fa-users"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script>
+        var ResLabels_SyncSuccess = "@ResLabels.SyncSuccess";
+        var ResLabels_SyncFail = "@ResLabels.SyncFail";
+    </script>
+    @Html.Raw(WebFunctions.JavascriptFileImport("~/Resources/scriptViews/Shared/WorkdayCount.js"))
+}

@@ -1,0 +1,16 @@
+﻿@using Localization.Web
+
+<div class="box box-danger">
+    <div class="box-body">
+        <div class="text-danger text-center h2">
+            <strong>
+                @ResLabels.Attention.ToUpper()!
+            </strong>
+            <hr />
+        </div>
+        <div class="h3 text-center">
+            @Html.Raw(ResLabels.ApplicationInStage)
+        </div>
+
+    </div>
+</div><!-- /.box -->

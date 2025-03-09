@@ -1,0 +1,109 @@
+﻿@using Localization.Model
+
+@model Model.DatabaseContext.AboutConfiguration
+
+@using (Html.BeginForm(ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString(), FormMethod.Post, new { id = "editAbout" }))
+{
+    @Html.HiddenFor(model => model.Id)
+    @Html.HiddenFor(model => model.SiteId)
+    <div class="box box-warning">
+        <div class="box-header">
+            <div class="box-title">
+                @ResDatabaseContext.AboutConfiguration
+            </div>
+        </div>
+        <div class="box-body">
+            <div class="table table-striped">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Contact1Name, new { @class = "control-label" }):
+                            @Html.TextBoxFor(model => model.Contact1Name, new { @class = "form-control", @maxlength = "50" })
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Contact1Email, new { @class = "control-label" }):
+                            @Html.TextBoxFor(model => model.Contact1Email, new { @class = "form-control", @maxlength = "50" })
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Contact1Phone, new { @class = "control-label" }):
+                            @Html.TextBoxFor(model => model.Contact1Phone, new { @class = "form-control", @maxlength = "50" })
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Contact2Name, new { @class = "control-label" }):
+                            @Html.TextBoxFor(model => model.Contact2Name, new { @class = "form-control", @maxlength = "50" })
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Contact2Email, new { @class = "control-label" }):
+                            @Html.TextBoxFor(model => model.Contact2Email, new { @class = "form-control", @maxlength = "50" })
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Contact2Phone, new { @class = "control-label" }):
+                            @Html.TextBoxFor(model => model.Contact2Phone, new { @class = "form-control", @maxlength = "50" })
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Contact3Name, new { @class = "control-label" }):
+                            @Html.TextBoxFor(model => model.Contact3Name, new { @class = "form-control", @maxlength = "50" })
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Contact3Email, new { @class = "control-label" }):
+                            @Html.TextBoxFor(model => model.Contact3Email, new { @class = "form-control", @maxlength = "50" })
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Contact3Phone, new { @class = "control-label" }):
+                            @Html.TextBoxFor(model => model.Contact3Phone, new { @class = "form-control", @maxlength = "50" })
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Contact4Name, new { @class = "control-label" }):
+                            @Html.TextBoxFor(model => model.Contact4Name, new { @class = "form-control", @maxlength = "50" })
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Contact4Email, new { @class = "control-label" }):
+                            @Html.TextBoxFor(model => model.Contact4Email, new { @class = "form-control", @maxlength = "50" })
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Contact4Phone, new { @class = "control-label" }):
+                            @Html.TextBoxFor(model => model.Contact4Phone, new { @class = "form-control", @maxlength = "50" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box-footer">
+            <button type="button" id="saveAbout" class="btn btn-success pull-right">Gravar</button>
+        </div>
+    </div><!-- /.box -->
+}

@@ -1,0 +1,251 @@
+﻿<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <edmx:DataServices m:DataServiceVersion="3.0" m:MaxDataServiceVersion="3.0" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata">
+    <Schema Namespace="JMDDataServices.Model" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <EntityType Name="Assembly">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CustomerId" Type="Edm.Int32" Nullable="false" />
+        <Property Name="FamilyId" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Active" Type="Edm.Boolean" Nullable="false" />
+        <Property Name="Number" Type="Edm.String" Nullable="false" />
+        <Property Name="Revision" Type="Edm.String" Nullable="false" />
+        <Property Name="Description" Type="Edm.String" Nullable="false" />
+      </EntityType>
+      <EntityType Name="CostCenter">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Code" Type="Edm.String" />
+        <Property Name="Description" Type="Edm.String" />
+        <Property Name="WorkcellId" Type="Edm.Int32" />
+        <Property Name="CustomerId" Type="Edm.Int32" />
+        <Property Name="Type" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
+        <Property Name="ProfitCenter" Type="Edm.String" />
+        <NavigationProperty Name="Workcell" Relationship="JMDDataServices.Model.JMDDataServices_Model_CostCenter_Workcell_JMDDataServices_Model_Workcell_WorkcellPartner" ToRole="Workcell" FromRole="WorkcellPartner" />
+        <NavigationProperty Name="Customer" Relationship="JMDDataServices.Model.JMDDataServices_Model_CostCenter_Customer_JMDDataServices_Model_Customer_CustomerPartner" ToRole="Customer" FromRole="CustomerPartner" />
+      </EntityType>
+      <EntityType Name="Customer">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" />
+        <Property Name="Active" Type="Edm.Boolean" Nullable="false" />
+      </EntityType>
+      <EntityType Name="Document">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="InfoCardId" Type="Edm.String" />
+        <Property Name="InfoCardNumber" Type="Edm.String" />
+        <Property Name="Revision" Type="Edm.String" />
+        <Property Name="Title" Type="Edm.String" />
+        <Property Name="PreviousNumber" Type="Edm.String" />
+        <Property Name="Vault" Type="Edm.String" />
+        <Property Name="AnonymousLink" Type="Edm.String" />
+        <Property Name="AuthenticatedLink" Type="Edm.String" />
+      </EntityType>
+      <EntityType Name="Equipment">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" />
+      </EntityType>
+      <EntityType Name="Factory">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" />
+      </EntityType>
+      <EntityType Name="FailureData">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="CustomerId" Type="Edm.Int32" Nullable="false" />
+        <Property Name="DataLabel" Type="Edm.String" />
+        <Property Name="Comment" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.Int32" Nullable="false" />
+      </EntityType>
+      <EntityType Name="Family">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" />
+      </EntityType>
+      <EntityType Name="FunctionalArea">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" Nullable="false" />
+        <Property Name="IdSite" Type="Edm.Int32" Nullable="false" />
+      </EntityType>
+      <EntityType Name="Language">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" Nullable="false" />
+        <Property Name="IdMes" Type="Edm.Int32" Nullable="false" />
+      </EntityType>
+      <EntityType Name="ManufacturingArea">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" />
+      </EntityType>
+      <EntityType Name="ManufacturingSubArea">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" Nullable="false" />
+        <Property Name="Status" Type="Edm.Int32" Nullable="false" />
+      </EntityType>
+      <EntityType Name="Material">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Code" Type="Edm.String" />
+        <Property Name="Description" Type="Edm.String" />
+        <Property Name="Active" Type="Edm.Boolean" Nullable="false" />
+      </EntityType>
+      <EntityType Name="ProductionGroup">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" />
+      </EntityType>
+      <EntityType Name="ProductionLine">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" />
+        <Property Name="Active" Type="Edm.Boolean" Nullable="false" />
+      </EntityType>
+      <EntityType Name="StepInstance">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="StepId" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" />
+      </EntityType>
+      <EntityType Name="Supplier">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="SapId" Type="Edm.String" />
+        <Property Name="Name" Type="Edm.String" />
+        <Property Name="CNPJ" Type="Edm.String" />
+        <Property Name="Contact" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" />
+      </EntityType>
+      <EntityType Name="User">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Registration" Type="Edm.String" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" Nullable="false" />
+        <Property Name="Mail" Type="Edm.String" />
+        <Property Name="Username" Type="Edm.String" />
+        <Property Name="Status" Type="Edm.String" Nullable="false" />
+      </EntityType>
+      <EntityType Name="WorkStation">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" Nullable="false" />
+        <Property Name="Status" Type="Edm.Int32" Nullable="false" />
+      </EntityType>
+      <EntityType Name="Workcell">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" Nullable="false" />
+        <Property Name="Status" Type="Edm.String" Nullable="false" />
+        <Property Name="SiteId" Type="Edm.Int32" />
+        <NavigationProperty Name="Site" Relationship="JMDDataServices.Model.JMDDataServices_Model_Workcell_Site_JMDDataServices_Model_jBel__site_SitePartner" ToRole="Site" FromRole="SitePartner" />
+      </EntityType>
+      <EntityType Name="jBel_site">
+        <Key>
+          <PropertyRef Name="idSite" />
+        </Key>
+        <Property Name="idSite" Type="Edm.Int32" Nullable="false" />
+        <Property Name="sName" Type="Edm.String" />
+        <Property Name="iModifier" Type="Edm.Int32" Nullable="false" />
+        <Property Name="dLastUpdate" Type="Edm.DateTime" Nullable="false" />
+        <Property Name="sCode" Type="Edm.String" />
+        <Property Name="sStorageLocal" Type="Edm.String" />
+        <Property Name="sSalesOrganization" Type="Edm.String" />
+        <Property Name="iMesFactoryId" Type="Edm.Int32" />
+      </EntityType>
+      <Association Name="JMDDataServices_Model_CostCenter_Workcell_JMDDataServices_Model_Workcell_WorkcellPartner">
+        <End Type="JMDDataServices.Model.Workcell" Role="Workcell" Multiplicity="0..1" />
+        <End Type="JMDDataServices.Model.CostCenter" Role="WorkcellPartner" Multiplicity="0..1" />
+      </Association>
+      <Association Name="JMDDataServices_Model_CostCenter_Customer_JMDDataServices_Model_Customer_CustomerPartner">
+        <End Type="JMDDataServices.Model.Customer" Role="Customer" Multiplicity="0..1" />
+        <End Type="JMDDataServices.Model.CostCenter" Role="CustomerPartner" Multiplicity="0..1" />
+      </Association>
+      <Association Name="JMDDataServices_Model_Workcell_Site_JMDDataServices_Model_jBel__site_SitePartner">
+        <End Type="JMDDataServices.Model.jBel_site" Role="Site" Multiplicity="0..1" />
+        <End Type="JMDDataServices.Model.Workcell" Role="SitePartner" Multiplicity="0..1" />
+      </Association>
+    </Schema>
+    <Schema Namespace="Default" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <EntityContainer Name="Container" m:IsDefaultEntityContainer="true">
+        <EntitySet Name="Assemblies" EntityType="JMDDataServices.Model.Assembly" />
+        <EntitySet Name="CostCenters" EntityType="JMDDataServices.Model.CostCenter" />
+        <EntitySet Name="Customers" EntityType="JMDDataServices.Model.Customer" />
+        <EntitySet Name="Documents" EntityType="JMDDataServices.Model.Document" />
+        <EntitySet Name="Equipments" EntityType="JMDDataServices.Model.Equipment" />
+        <EntitySet Name="Factories" EntityType="JMDDataServices.Model.Factory" />
+        <EntitySet Name="FailureDatas" EntityType="JMDDataServices.Model.FailureData" />
+        <EntitySet Name="Families" EntityType="JMDDataServices.Model.Family" />
+        <EntitySet Name="FunctionalAreas" EntityType="JMDDataServices.Model.FunctionalArea" />
+        <EntitySet Name="Languages" EntityType="JMDDataServices.Model.Language" />
+        <EntitySet Name="ManufacturingAreas" EntityType="JMDDataServices.Model.ManufacturingArea" />
+        <EntitySet Name="ManufacturingSubAreas" EntityType="JMDDataServices.Model.ManufacturingSubArea" />
+        <EntitySet Name="Materials" EntityType="JMDDataServices.Model.Material" />
+        <EntitySet Name="ProductionGroups" EntityType="JMDDataServices.Model.ProductionGroup" />
+        <EntitySet Name="ProductionLines" EntityType="JMDDataServices.Model.ProductionLine" />
+        <EntitySet Name="StepInstances" EntityType="JMDDataServices.Model.StepInstance" />
+        <EntitySet Name="Suppliers" EntityType="JMDDataServices.Model.Supplier" />
+        <EntitySet Name="Users" EntityType="JMDDataServices.Model.User" />
+        <EntitySet Name="WorkStations" EntityType="JMDDataServices.Model.WorkStation" />
+        <EntitySet Name="Workcells" EntityType="JMDDataServices.Model.Workcell" />
+        <EntitySet Name="Site" EntityType="JMDDataServices.Model.jBel_site" />
+        <AssociationSet Name="JMDDataServices_Model_CostCenter_Workcell_JMDDataServices_Model_Workcell_WorkcellPartnerSet" Association="JMDDataServices.Model.JMDDataServices_Model_CostCenter_Workcell_JMDDataServices_Model_Workcell_WorkcellPartner">
+          <End Role="WorkcellPartner" EntitySet="CostCenters" />
+          <End Role="Workcell" EntitySet="Workcells" />
+        </AssociationSet>
+        <AssociationSet Name="JMDDataServices_Model_CostCenter_Customer_JMDDataServices_Model_Customer_CustomerPartnerSet" Association="JMDDataServices.Model.JMDDataServices_Model_CostCenter_Customer_JMDDataServices_Model_Customer_CustomerPartner">
+          <End Role="CustomerPartner" EntitySet="CostCenters" />
+          <End Role="Customer" EntitySet="Customers" />
+        </AssociationSet>
+        <AssociationSet Name="JMDDataServices_Model_Workcell_Site_JMDDataServices_Model_jBel__site_SitePartnerSet" Association="JMDDataServices.Model.JMDDataServices_Model_Workcell_Site_JMDDataServices_Model_jBel__site_SitePartner">
+          <End Role="SitePartner" EntitySet="Workcells" />
+          <End Role="Site" EntitySet="Site" />
+        </AssociationSet>
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

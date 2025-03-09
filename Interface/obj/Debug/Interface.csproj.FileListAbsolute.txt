@@ -1,0 +1,12 @@
+C:\Projects\DasboardManagement_CVG_V2\DasboardManagement\Trunk\Interface\bin\Debug\Interface.dll
+C:\Projects\DasboardManagement_CVG_V2\DasboardManagement\Trunk\Interface\bin\Debug\Interface.pdb
+C:\Projects\DasboardManagement_CVG_V2\DasboardManagement\Trunk\Interface\obj\Debug\Interface.csproj.CoreCompileInputs.cache
+C:\Projects\DasboardManagement_CVG_V2\DasboardManagement\Trunk\Interface\obj\Debug\Interface.dll
+C:\Projects\DasboardManagement_CVG_V2\DasboardManagement\Trunk\Interface\obj\Debug\Interface.pdb
+C:\Projects\DasboardManagement_CVG_V2\DasboardManagement\Trunk\Interface\obj\Debug\Interface.csprojAssemblyReference.cache
+C:\Users\Fernandc3\Downloads\DashboardManager.Americas.CVG\Interface\bin\Debug\Interface.dll
+C:\Users\Fernandc3\Downloads\DashboardManager.Americas.CVG\Interface\bin\Debug\Interface.pdb
+C:\Users\Fernandc3\Downloads\DashboardManager.Americas.CVG\Interface\obj\Debug\Interface.csproj.AssemblyReference.cache
+C:\Users\Fernandc3\Downloads\DashboardManager.Americas.CVG\Interface\obj\Debug\Interface.csproj.CoreCompileInputs.cache
+C:\Users\Fernandc3\Downloads\DashboardManager.Americas.CVG\Interface\obj\Debug\Interface.dll
+C:\Users\Fernandc3\Downloads\DashboardManager.Americas.CVG\Interface\obj\Debug\Interface.pdb

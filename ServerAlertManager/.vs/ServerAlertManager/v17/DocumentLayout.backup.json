@@ -1,0 +1,217 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2C904A04-5510-4B83-ABA3-EE57578D12B0}|ServerAlertManager\\ServerAlertManager.csproj|c:\\users\\fernandc3\\source\\repos\\alertmanager.americas.bel\\clients\\jabilalertmanager\\serveralertmanager\\formgapanalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C904A04-5510-4B83-ABA3-EE57578D12B0}|ServerAlertManager\\ServerAlertManager.csproj|solutionrelative:serveralertmanager\\formgapanalysis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C904A04-5510-4B83-ABA3-EE57578D12B0}|ServerAlertManager\\ServerAlertManager.csproj|C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\serveralertmanager\\formjos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C904A04-5510-4B83-ABA3-EE57578D12B0}|ServerAlertManager\\ServerAlertManager.csproj|solutionrelative:serveralertmanager\\formjos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C904A04-5510-4B83-ABA3-EE57578D12B0}|ServerAlertManager\\ServerAlertManager.csproj|C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\serveralertmanager\\formlpabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C904A04-5510-4B83-ABA3-EE57578D12B0}|ServerAlertManager\\ServerAlertManager.csproj|solutionrelative:serveralertmanager\\formlpabel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C904A04-5510-4B83-ABA3-EE57578D12B0}|ServerAlertManager\\ServerAlertManager.csproj|C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\serveralertmanager\\formlpavls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C904A04-5510-4B83-ABA3-EE57578D12B0}|ServerAlertManager\\ServerAlertManager.csproj|solutionrelative:serveralertmanager\\formlpavls.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C904A04-5510-4B83-ABA3-EE57578D12B0}|ServerAlertManager\\ServerAlertManager.csproj|C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\serveralertmanager\\formworkday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C904A04-5510-4B83-ABA3-EE57578D12B0}|ServerAlertManager\\ServerAlertManager.csproj|solutionrelative:serveralertmanager\\formworkday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C904A04-5510-4B83-ABA3-EE57578D12B0}|ServerAlertManager\\ServerAlertManager.csproj|C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\serveralertmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C904A04-5510-4B83-ABA3-EE57578D12B0}|ServerAlertManager\\ServerAlertManager.csproj|solutionrelative:serveralertmanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C904A04-5510-4B83-ABA3-EE57578D12B0}|ServerAlertManager\\ServerAlertManager.csproj|C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\serveralertmanager\\formworkday.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C904A04-5510-4B83-ABA3-EE57578D12B0}|ServerAlertManager\\ServerAlertManager.csproj|solutionrelative:serveralertmanager\\formworkday.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C904A04-5510-4B83-ABA3-EE57578D12B0}|ServerAlertManager\\ServerAlertManager.csproj|C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\serveralertmanager\\formlpavls.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C904A04-5510-4B83-ABA3-EE57578D12B0}|ServerAlertManager\\ServerAlertManager.csproj|solutionrelative:serveralertmanager\\formlpavls.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C904A04-5510-4B83-ABA3-EE57578D12B0}|ServerAlertManager\\ServerAlertManager.csproj|C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\serveralertmanager\\formlpabel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C904A04-5510-4B83-ABA3-EE57578D12B0}|ServerAlertManager\\ServerAlertManager.csproj|solutionrelative:serveralertmanager\\formlpabel.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C904A04-5510-4B83-ABA3-EE57578D12B0}|ServerAlertManager\\ServerAlertManager.csproj|C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\serveralertmanager\\formjos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C904A04-5510-4B83-ABA3-EE57578D12B0}|ServerAlertManager\\ServerAlertManager.csproj|solutionrelative:serveralertmanager\\formjos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C904A04-5510-4B83-ABA3-EE57578D12B0}|ServerAlertManager\\ServerAlertManager.csproj|C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\serveralertmanager\\formgapanalysis.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C904A04-5510-4B83-ABA3-EE57578D12B0}|ServerAlertManager\\ServerAlertManager.csproj|solutionrelative:serveralertmanager\\formgapanalysis.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2C904A04-5510-4B83-ABA3-EE57578D12B0}|ServerAlertManager\\ServerAlertManager.csproj|C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\serveralertmanager\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2C904A04-5510-4B83-ABA3-EE57578D12B0}|ServerAlertManager\\ServerAlertManager.csproj|solutionrelative:serveralertmanager\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\ServerAlertManager\\Program.cs",
+              "RelativeDocumentMoniker": "ServerAlertManager\\Program.cs",
+              "ToolTip": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\ServerAlertManager\\Program.cs",
+              "RelativeToolTip": "ServerAlertManager\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T02:03:57.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormWorkday.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\ServerAlertManager\\FormWorkday.Designer.cs",
+              "RelativeDocumentMoniker": "ServerAlertManager\\FormWorkday.Designer.cs",
+              "ToolTip": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\ServerAlertManager\\FormWorkday.Designer.cs",
+              "RelativeToolTip": "ServerAlertManager\\FormWorkday.Designer.cs",
+              "ViewState": "AgIAADYBAAAAAAAAAAAEwFEBAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T02:03:52.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormWorkday.cs",
+              "DocumentMoniker": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\ServerAlertManager\\FormWorkday.cs",
+              "RelativeDocumentMoniker": "ServerAlertManager\\FormWorkday.cs",
+              "ToolTip": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\ServerAlertManager\\FormWorkday.cs",
+              "RelativeToolTip": "ServerAlertManager\\FormWorkday.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T02:03:46.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormLpaVls.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\ServerAlertManager\\FormLpaVls.Designer.cs",
+              "RelativeDocumentMoniker": "ServerAlertManager\\FormLpaVls.Designer.cs",
+              "ToolTip": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\ServerAlertManager\\FormLpaVls.Designer.cs",
+              "RelativeToolTip": "ServerAlertManager\\FormLpaVls.Designer.cs",
+              "ViewState": "AgIAADYBAAAAAAAAAAAEwFEBAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T02:03:39.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormLpaVls.cs",
+              "DocumentMoniker": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\ServerAlertManager\\FormLpaVls.cs",
+              "RelativeDocumentMoniker": "ServerAlertManager\\FormLpaVls.cs",
+              "ToolTip": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\ServerAlertManager\\FormLpaVls.cs",
+              "RelativeToolTip": "ServerAlertManager\\FormLpaVls.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABQAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T02:03:20.769Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormLpaBel.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\ServerAlertManager\\FormLpaBel.Designer.cs",
+              "RelativeDocumentMoniker": "ServerAlertManager\\FormLpaBel.Designer.cs",
+              "ToolTip": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\ServerAlertManager\\FormLpaBel.Designer.cs",
+              "RelativeToolTip": "ServerAlertManager\\FormLpaBel.Designer.cs",
+              "ViewState": "AgIAADcBAAAAAAAAAAAEwFIBAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T02:03:14.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FormLpaBel.cs",
+              "DocumentMoniker": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\ServerAlertManager\\FormLpaBel.cs",
+              "RelativeDocumentMoniker": "ServerAlertManager\\FormLpaBel.cs",
+              "ToolTip": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\ServerAlertManager\\FormLpaBel.cs",
+              "RelativeToolTip": "ServerAlertManager\\FormLpaBel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T02:03:09.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormJos.cs",
+              "DocumentMoniker": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\ServerAlertManager\\FormJos.cs",
+              "RelativeDocumentMoniker": "ServerAlertManager\\FormJos.cs",
+              "ToolTip": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\ServerAlertManager\\FormJos.cs",
+              "RelativeToolTip": "ServerAlertManager\\FormJos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T02:02:54.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormGapAnalysis.cs",
+              "DocumentMoniker": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\ServerAlertManager\\FormGapAnalysis.cs",
+              "RelativeDocumentMoniker": "ServerAlertManager\\FormGapAnalysis.cs",
+              "ToolTip": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\ServerAlertManager\\FormGapAnalysis.cs",
+              "RelativeToolTip": "ServerAlertManager\\FormGapAnalysis.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T02:02:08.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FormJos.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\ServerAlertManager\\FormJos.Designer.cs",
+              "RelativeDocumentMoniker": "ServerAlertManager\\FormJos.Designer.cs",
+              "ToolTip": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\ServerAlertManager\\FormJos.Designer.cs",
+              "RelativeToolTip": "ServerAlertManager\\FormJos.Designer.cs",
+              "ViewState": "AgIAADIBAAAAAAAAAAAEwE0BAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T02:03:01.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FormGapAnalysis.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\ServerAlertManager\\FormGapAnalysis.Designer.cs",
+              "RelativeDocumentMoniker": "ServerAlertManager\\FormGapAnalysis.Designer.cs",
+              "ToolTip": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\ServerAlertManager\\FormGapAnalysis.Designer.cs",
+              "RelativeToolTip": "ServerAlertManager\\FormGapAnalysis.Designer.cs",
+              "ViewState": "AgIAADIBAAAAAAAAAAAEwE0BAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T02:02:43.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\ServerAlertManager\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "ServerAlertManager\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\Fernandc3\\source\\repos\\AlertManager.Americas.BEL\\Clients\\JabilAlertManager\\ServerAlertManager\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "ServerAlertManager\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T02:02:38.256Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

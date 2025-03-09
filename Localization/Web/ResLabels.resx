@@ -1,0 +1,530 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>Sobre</value>
+  </data>
+  <data name="AboutTableTitle" xml:space="preserve">
+    <value>SUPORTE EM CASO DE INCIDENTES COM ESTE SISTEMA</value>
+  </data>
+  <data name="Access" xml:space="preserve">
+    <value>Acessos</value>
+  </data>
+  <data name="Actions" xml:space="preserve">
+    <value>Ações</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Todos</value>
+  </data>
+  <data name="AllRightsReserved" xml:space="preserve">
+    <value>Todos os direitos reservados</value>
+  </data>
+  <data name="ApplicationErrorOccurred" xml:space="preserve">
+    <value>Ocorreu um erro na aplicação. Informe os dados abaixo aos responsáveis pelo sistema:</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Aplicar</value>
+  </data>
+  <data name="Attention" xml:space="preserve">
+    <value>Atenção</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Voltar</value>
+  </data>
+  <data name="Both" xml:space="preserve">
+    <value>Ambos</value>
+  </data>
+  <data name="By" xml:space="preserve">
+    <value>Por</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="Canceled" xml:space="preserve">
+    <value>Cancelada</value>
+  </data>
+  <data name="Changed" xml:space="preserve">
+    <value>Alterado(a)</value>
+  </data>
+  <data name="ClearLog" xml:space="preserve">
+    <value>Limpar Log</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="Closed" xml:space="preserve">
+    <value>Fechado</value>
+  </data>
+  <data name="Configurations" xml:space="preserve">
+    <value>Configurações</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirmar</value>
+  </data>
+  <data name="ConfirmDelete" xml:space="preserve">
+    <value>Confirmar Exclusão</value>
+  </data>
+  <data name="ConfirmLogDelete" xml:space="preserve">
+    <value>Confirma a exclusão do LOG &lt;strong&gt;[ {0} ]&lt;/strong&gt;? Serão mantidos os últimos {1} dias!</value>
+  </data>
+  <data name="ConfirmLogout" xml:space="preserve">
+    <value>Confirma a saída do sistema</value>
+  </data>
+  <data name="Controls" xml:space="preserve">
+    <value>Controles</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="DateFormat" xml:space="preserve">
+    <value>DD/MM/YYYY</value>
+  </data>
+  <data name="DateFromTo" xml:space="preserve">
+    <value>&lt;strong&gt;{0}&lt;/strong&gt; às &lt;strong&gt;{1}&lt;/strong&gt;</value>
+  </data>
+  <data name="DateTimeFormat" xml:space="preserve">
+    <value>DD/MM/YYYY HH:mm</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Excluir</value>
+  </data>
+  <data name="DevelopedBy" xml:space="preserve">
+    <value>Desenvolvido por</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Alterar</value>
+  </data>
+  <data name="EditItems" xml:space="preserve">
+    <value>Alterar Itens</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Erro</value>
+  </data>
+  <data name="ErrorOccurred" xml:space="preserve">
+    <value>Ocorreu um erro</value>
+  </data>
+  <data name="ExportTo" xml:space="preserve">
+    <value>Exportar para</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>Filtrar</value>
+  </data>
+  <data name="From" xml:space="preserve">
+    <value>De</value>
+  </data>
+  <data name="HideEmpty" xml:space="preserve">
+    <value>Omitir Vazios</value>
+  </data>
+  <data name="HideFilter" xml:space="preserve">
+    <value>Esconder Filtros</value>
+  </data>
+  <data name="Hour" xml:space="preserve">
+    <value>Hora</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Importar</value>
+  </data>
+  <data name="In" xml:space="preserve">
+    <value>Em</value>
+  </data>
+  <data name="Inactive" xml:space="preserve">
+    <value>Inativo</value>
+  </data>
+  <data name="Insert" xml:space="preserve">
+    <value>Incluir</value>
+  </data>
+  <data name="ItemExists" xml:space="preserve">
+    <value>Esse item já existe</value>
+  </data>
+  <data name="JmdSync" xml:space="preserve">
+    <value>Sincronizar com o JMD</value>
+  </data>
+  <data name="LastDays" xml:space="preserve">
+    <value>Últimos {0} Dias</value>
+  </data>
+  <data name="LastMonth" xml:space="preserve">
+    <value>Mês Passado</value>
+  </data>
+  <data name="LastUpdate" xml:space="preserve">
+    <value>Atualizado em</value>
+  </data>
+  <data name="LoggedIn" xml:space="preserve">
+    <value>Logado</value>
+  </data>
+  <data name="LoggedOut" xml:space="preserve">
+    <value>Sessão Encerrada</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Acessar</value>
+  </data>
+  <data name="LoginDate" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginWithSuccess" xml:space="preserve">
+    <value>Login efetuado com sucesso</value>
+  </data>
+  <data name="LogLogin" xml:space="preserve">
+    <value>Entrada no Sistema</value>
+  </data>
+  <data name="LogLogout" xml:space="preserve">
+    <value>Saída do Sistema</value>
+  </data>
+  <data name="LogoffWithSuccess" xml:space="preserve">
+    <value>Saída do sistema efetuada</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Sair do Sistema</value>
+  </data>
+  <data name="LogoutDate" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="Logs" xml:space="preserve">
+    <value>Verificação de Logs</value>
+  </data>
+  <data name="MoreDetails" xml:space="preserve">
+    <value>Detalhes</value>
+  </data>
+  <data name="NewRecord" xml:space="preserve">
+    <value>Novo Registro</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Não</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>Nenhuma</value>
+  </data>
+  <data name="Of" xml:space="preserve">
+    <value>de</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Aberto</value>
+  </data>
+  <data name="Operator" xml:space="preserve">
+    <value>Operador</value>
+  </data>
+  <data name="Ordering" xml:space="preserve">
+    <value>Reordenar</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Página</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>Período</value>
+  </data>
+  <data name="ProgramName" xml:space="preserve">
+    <value>Gerenciador de Alertas</value>
+  </data>
+  <data name="RecordStatus" xml:space="preserve">
+    <value>Status do Registro</value>
+  </data>
+  <data name="RegistrationNotFound" xml:space="preserve">
+    <value>Matrícula não encontrada</value>
+  </data>
+  <data name="ReOpen" xml:space="preserve">
+    <value>Reabrir</value>
+  </data>
+  <data name="Reopened" xml:space="preserve">
+    <value>Reaberta</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Gravar</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Pesquisar</value>
+  </data>
+  <data name="SelectAll" xml:space="preserve">
+    <value>Selecionar Todos</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Configurações</value>
+  </data>
+  <data name="ShowFilter" xml:space="preserve">
+    <value>Exibir Filtros</value>
+  </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>Informe os dados para acesso</value>
+  </data>
+  <data name="Since" xml:space="preserve">
+    <value>Desde</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="SuccessfullyClearLog" xml:space="preserve">
+    <value>Log limpo com sucesso!</value>
+  </data>
+  <data name="SuccessfullyDeletedRecord" xml:space="preserve">
+    <value>Registro excluído com sucesso!</value>
+  </data>
+  <data name="SuccessfullySentMail" xml:space="preserve">
+    <value>Email enviado com sucesso</value>
+  </data>
+  <data name="SuccessfullyWrittenRecord" xml:space="preserve">
+    <value>Registro gravado com sucesso!</value>
+  </data>
+  <data name="SyncFail" xml:space="preserve">
+    <value>Falha na sincronia</value>
+  </data>
+  <data name="SyncSuccess" xml:space="preserve">
+    <value>Dados sincronizados com sucesso</value>
+  </data>
+  <data name="ThisMonth" xml:space="preserve">
+    <value>Este Mês</value>
+  </data>
+  <data name="To" xml:space="preserve">
+    <value>Até</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>Hoje</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Atualizar</value>
+  </data>
+  <data name="UserManual" xml:space="preserve">
+    <value>Manual do Usuário</value>
+  </data>
+  <data name="UserNotEmployee" xml:space="preserve">
+    <value>Seu usuário não está associado a nenhum Colaborador</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>Visualizar</value>
+  </data>
+  <data name="ViewCompleteDescription" xml:space="preserve">
+    <value>Visualizar descrição completa</value>
+  </data>
+  <data name="WaitAnswerProcessing" xml:space="preserve">
+    <value>Aguarde o processamento das respostas</value>
+  </data>
+  <data name="WillBe" xml:space="preserve">
+    <value>Será</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+  <data name="Yesterday" xml:space="preserve">
+    <value>Ontem</value>
+  </data>
+  <data name="Disabled" xml:space="preserve">
+    <value>Desabilitado</value>
+  </data>
+  <data name="Enabled" xml:space="preserve">
+    <value>Habilitado</value>
+  </data>
+  <data name="WaitingPreviousProcess" xml:space="preserve">
+    <value>Aguardando finalização do processo anterior</value>
+  </data>
+  <data name="LogCleared" xml:space="preserve">
+    <value>Log &lt;strong&gt;[{0}]&lt;/strong&gt; limpo dos últimos {1} dias</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>Personalizado</value>
+  </data>
+  <data name="ApplicationInStage" xml:space="preserve">
+    <value>ESSA APLICAÇÃO ESTÁ INSTALADA EM UM SERVIDOR DE TESTES E NÃO DEVE SER UTILIZADA EM PRODUÇÃO E NEM SUBSTITUIR NENHUM PROCESSO ATUAL.
+&lt;br /&gt; &lt;br /&gt;
+O IT NÃO SE RESPONSABILIZA POR EVENTUAIS PROBLEMAS QUE A UTILIZAÇÃO INCORRETA DA MESMA PROPORCIONE.
+&lt;br /&gt;&lt;br /&gt;
+OBRIGADO</value>
+  </data>
+  <data name="MessageModel_Alert" xml:space="preserve">
+    <value>Alerta</value>
+  </data>
+  <data name="MessageModel_Error" xml:space="preserve">
+    <value>Erro</value>
+  </data>
+  <data name="MessageModel_Information" xml:space="preserve">
+    <value>Informação</value>
+  </data>
+  <data name="MessageModel_Success" xml:space="preserve">
+    <value>Sucesso</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>Dia</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>Geral</value>
+  </data>
+  <data name="Month" xml:space="preserve">
+    <value>Mês</value>
+  </data>
+  <data name="Quantity" xml:space="preserve">
+    <value>Quantidade</value>
+  </data>
+  <data name="ShowBy" xml:space="preserve">
+    <value>Mostrar por</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Início</value>
+  </data>
+  <data name="Week" xml:space="preserve">
+    <value>Semana</value>
+  </data>
+  <data name="EmptyData" xml:space="preserve">
+    <value>Nenhum dado encontrado com os parâmetros informados</value>
+  </data>
+  <data name="LoadingData" xml:space="preserve">
+    <value>Carregando Dados...</value>
+  </data>
+  <data name="VideoTutorialButton" xml:space="preserve">
+    <value>Ver Tutorial em Vídeo desta Página</value>
+  </data>
+  <data name="VideoTutorialButtonHelp" xml:space="preserve">
+    <value>Para assistir um vídeo tutorial de qualquer página do sistema, basta clicar neste botão</value>
+  </data>
+  <data name="GotIt" xml:space="preserve">
+    <value>Entendi</value>
+  </data>
+  <data name="SelectDashboard" xml:space="preserve">
+    <value>Selecione o Dashboard</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Exibir</value>
+  </data>
+  <data name="PublicAddressDashboardSelect" xml:space="preserve">
+    <value>Endereço Público para seleção de Dashboards</value>
+  </data>
+  <data name="Oops" xml:space="preserve">
+    <value>Oops !!</value>
+  </data>
+  <data name="Sync" xml:space="preserve">
+    <value>Sincronizar Colaboradores</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="FilterStatus" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="DisableAll" xml:space="preserve">
+    <value>Desmarcar Todos</value>
+  </data>
+  <data name="Upload" xml:space="preserve">
+    <value>Upload Funcionários</value>
+  </data>
+  <data name="Choose" xml:space="preserve">
+    <value>Escolher arquivo</value>
+  </data>
+</root>

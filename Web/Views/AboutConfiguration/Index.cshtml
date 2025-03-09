@@ -1,0 +1,113 @@
+﻿@using Localization.Web
+
+@model Model.DatabaseContext.AboutConfiguration
+
+<div class="box box-default">
+    <div class="box-body">
+        <div class="col-sm-6 h3 text-bold text-info">
+            <br />
+            @ResLabels.ProgramName <small>@("V" + ViewContext.Controller.GetType().Assembly.GetName().Version)</small>
+        </div>
+        <div class="col-sm-6 text-right">
+            <img src="~/Resources/img/Terry.gif" style="width: 100px;" />
+        </div>
+
+        <br /><br /><br /><hr />
+        <div class="col-sm-12">
+
+            <div class="h4 text-info text-bold">
+                @ResLabels.AboutTableTitle
+            </div>
+
+            <table class="table table-bordered table-striped table-condensed table-hover table-responsive" id="DataTable">
+                <thead>
+                    <tr>
+                        <th>
+                        </th>
+                        <th>
+                            @ResLabels.Name
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Contact1Email)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Contact1Phone)
+                        </th>
+
+                    </tr>
+                </thead>
+                <tr>
+                    <td>
+                        <strong>@Html.DisplayNameFor(model => model.Contact1Name)</strong>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => model.Contact1Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => model.Contact1Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => model.Contact1Phone)
+                    </td>
+                </tr>
+
+                @if (!string.IsNullOrEmpty(Model.Contact2Name))
+                {
+                    <tr>
+                        <td>
+                            <strong>@Html.DisplayNameFor(model => model.Contact2Name)</strong>
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.Contact2Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.Contact2Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.Contact2Phone)
+                        </td>
+                    </tr>
+                }
+
+                @if (!string.IsNullOrEmpty(Model.Contact3Name))
+                {
+                    <tr>
+                        <td>
+                            <strong>@Html.DisplayNameFor(model => model.Contact3Name)</strong>
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.Contact3Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.Contact3Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.Contact3Phone)
+                        </td>
+                    </tr>
+                }
+
+                @if (!string.IsNullOrEmpty(Model.Contact4Name))
+                {
+                    <tr>
+                        <td>
+                            <strong>@Html.DisplayNameFor(model => model.Contact4Name)</strong>
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.Contact4Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.Contact4Email)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.Contact4Phone)
+                        </td>
+                    </tr>
+                }
+
+            </table>
+        </div>
+
+
+    </div>
+</div><!-- /.box -->

@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C904A04-5510-4B83-ABA3-EE57578D12B0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ServerAlertManager</RootNamespace>
+    <AssemblyName>ServerAlertManager</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\ServerAlertManager.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices.AccountManagement" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tulpep.NotificationWindow, Version=1.1.38.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Tulpep.NotificationWindow.1.1.38\lib\net40\Tulpep.NotificationWindow.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormGapAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGapAnalysis.Designer.cs">
+      <DependentUpon>FormGapAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLpaBel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLpaBel.Designer.cs">
+      <DependentUpon>FormLpaBel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLpaVls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLpaVls.Designer.cs">
+      <DependentUpon>FormLpaVls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormJos.Designer.cs">
+      <DependentUpon>FormJos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRh.Designer.cs">
+      <DependentUpon>FormRh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWorkday.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWorkday.Designer.cs">
+      <DependentUpon>FormWorkday.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormGapAnalysis.resx">
+      <DependentUpon>FormGapAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJos.resx">
+      <DependentUpon>FormJos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLpaBel.resx">
+      <DependentUpon>FormLpaBel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLpaVls.resx">
+      <DependentUpon>FormLpaVls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRh.resx">
+      <DependentUpon>FormRh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWorkday.resx">
+      <DependentUpon>FormWorkday.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alarm.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aviso.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clean.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock_eMB_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ITLogo.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Jabil_FullColorLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shutdown.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TimesUp.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows Logon.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <None Include="Resources\error.png" />
+    <None Include="Resources\icons8_cancel_25px.png" />
+    <None Include="Resources\info.png" />
+    <None Include="Resources\success.png" />
+    <None Include="Resources\warning.png" />
+    <None Include="Resources\comunicado.gif" />
+    <None Include="Resources\nope-no.gif" />
+    <None Include="Resources\Windows Critical Stop.wav" />
+    <None Include="Resources\Timeisup.wav" />
+    <None Include="Resources\Notpossible.wav" />
+    <None Include="Resources\Nice.wav" />
+    <Content Include="Resources\workDay.png" />
+    <None Include="Resources\workDay1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

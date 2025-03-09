@@ -1,0 +1,17 @@
+﻿@using Localization.Web
+<div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel" class="modal-title">@ViewBag.Titulo</h3>
+    </div>
+    <div class="modal-body">
+        <h4 class="text-danger">@ViewBag.Mensagem</h4>
+    </div>
+    <div class="modal-footer">
+        <div class="btn-group-sm">
+            <button class="btn btn-warning" data-dismiss="modal">@ResLabels.Close</button>
+        </div>
+    </div>
+
+</div>
+

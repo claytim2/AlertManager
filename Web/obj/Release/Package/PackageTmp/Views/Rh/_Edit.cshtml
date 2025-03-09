@@ -1,0 +1,90 @@
+﻿@using Localization.Web
+@using Web.Business
+@model Model.DatabaseContext.Rh
+
+<div class="modal-content">
+
+    @using (Html.BeginForm(ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString(), FormMethod.Post, new { id = "edit" }))
+    {
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel" class="modal-title">@ViewBag.Titulo</h3>
+        </div>
+        <div class="modal-body">
+
+
+            @Html.AntiForgeryToken()
+
+            <div>
+                @if (ViewBag.TipoEdicao == "edit" || ViewBag.TipoEdicao == "delete") //Ser for edição, preenche o ID
+                {
+                    @Html.HiddenFor(model => model.Id)
+                }
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="form-group ">
+                            @Html.LabelFor(model => model.EmployeeID, new { @class = "control-label" })
+                            @Html.TextBoxFor(model => model.EmployeeID, new { @class = "form-control", @maxlength = "100" })
+                            @Html.ValidationMessageFor(model => model.EmployeeID)
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group ">
+                            @Html.LabelFor(model => model.Registration, new { @class = "control-label" })
+                            @Html.TextBoxFor(model => model.Registration, new { @class = "form-control", @maxlength = "100" })
+                            @Html.ValidationMessageFor(model => model.Registration)
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="form-group ">
+                            @Html.LabelFor(model => model.UserName, new { @class = "control-label" })
+                            @Html.TextBoxFor(model => model.UserName, new { @class = "form-control", @maxlength = "100" })
+                            @Html.ValidationMessageFor(model => model.UserName)
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="form-group ">
+                            @Html.LabelFor(model => model.Name, new { @class = "control-label" })
+                            @Html.TextBoxFor(model => model.Name, new { @class = "form-control", @maxlength = "100" })
+                            @Html.ValidationMessageFor(model => model.Name)
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="form-group ">
+                            @Html.LabelFor(model => model.Email, new { @class = "control-label" })
+                            @Html.TextBoxFor(model => model.Email, new { @class = "form-control", @maxlength = "100" })
+                            @Html.ValidationMessageFor(model => model.Email)
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="form-group ">
+                            @Html.Label(" ")
+                            @Html.Label(Html.GetDisplayName(x => x.Notification).ToString())
+                            @Html.CheckBoxFor(model => model.Notification, new { @class = "icheck-line-scheme" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-group-sm">
+                    <button name="Gravar" class="btn btn-success" id="EditSubmit">@ResLabels.Save</button>
+                    <button name="Excluir" class="btn btn-warning hidden" id="DeleteSubmit">@ResLabels.ConfirmDelete</button>
+                    <input type="button" class="btn btn-danger" id="Cancel" value="@ResLabels.Cancel" data-dismiss="modal" />
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<script>
+    var ResLabels_ErrorOccurred = "@ResLabels.ErrorOccurred";
+    var Locked = ("@ViewBag.Locked") === "True";
+    var TipoEdicao = "@ViewBag.TipoEdicao";
+</script>
+
+@Html.Raw(WebFunctions.JavascriptFileImport("~/Resources/scriptViews/Users/_Edit.js"))
+@Html.Raw(WebFunctions.JavascriptFileImport("~/Resources/scriptViews/Shared/CrudCommon.js"))
+@Html.Raw(WebFunctions.JavascriptFileImport("~/Resources/scriptViews/Shared/DeleteAction.js"))
+@Html.Raw(WebFunctions.JavascriptFileImport("~/Resources/scriptViews/Shared/EditAction.js"))

@@ -1,0 +1,84 @@
+﻿@using Localization.Web
+@using Model.AbsModels
+@using Web.Business
+@model Model.DatabaseContext.SystemConfiguration
+
+<div class="modal-content">
+
+    @using (Html.BeginForm(ViewContext.RouteData.Values["action"].ToString(), ViewContext.RouteData.Values["controller"].ToString(),
+                        FormMethod.Post,
+                        new { id = "edit" }))
+    {
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="myModalLabel" class="modal-title">@ViewBag.Titulo</h3>
+        </div>
+        <div class="modal-body">
+
+
+            @Html.AntiForgeryToken()
+
+            <div>
+                @if (ViewBag.TipoEdicao == "edit") //Ser for edição, preenche o ID
+                {
+                    @Html.HiddenFor(model => model.Id)
+                    @Html.HiddenFor(model => model.Key)
+                    @Html.HiddenFor(model => model.Description)
+                }
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="form-group ">
+                            @Html.LabelFor(model => model.Description, new { @class = "control-label" })
+                            <br />
+                            <div class="text-info lead">
+                                <strong>
+                                    <em>
+                                        @Html.DisplayFor(model => model.Description)
+                                    </em>
+                                </strong>
+                            </div>
+
+                            @Html.ValidationMessageFor(model => model.Description)
+                        </div>
+                    </div><!-- col-sm-6 -->
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        @if (ViewBag.ConfigItems != null)
+                        {
+                            <div class="form-group ">
+                                @Html.LabelFor(model => model.Value, new { @class = "control-label" })
+                                @Html.DropDownList("Value", (List<SelectListItem>)ViewBag.ConfigItems, new { @class = "form-control" })
+                                @Html.ValidationMessageFor(model => model.Value)
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="form-group ">
+                                @Html.LabelFor(model => model.Value, new { @class = "control-label" })
+                                @Html.TextBoxFor(model => model.Value, new { @class = "form-control", @maxlength = "200" })
+                                @Html.ValidationMessageFor(model => model.Value)
+                            </div>
+                        }
+
+                    </div><!-- col-sm-6 -->
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="btn-group-sm">
+                <button name="Gravar" class="btn btn-success" id="EditSubmit">@ResLabels.Save</button>
+                <input type="button" class="btn btn-danger" id="Cancel" value="@ResLabels.Cancel" data-dismiss="modal" />
+            </div>
+        </div>
+    }
+</div>
+<script>
+    var ResLabels_ErrorOccurred = "@ResLabels.ErrorOccurred";
+    var Locked = ("@ViewBag.Locked") === "True";
+    var TipoEdicao = "@ViewBag.TipoEdicao";
+</script>
+@Html.Raw(WebFunctions.JavascriptFileImport("~/Resources/scriptViews/SystemConfiguration/_Edit.js"))
+@Html.Raw(WebFunctions.JavascriptFileImport("~/Resources/scriptViews/Shared/EditAction.js"))
+@Html.Raw(WebFunctions.JavascriptFileImport("~/Resources/scriptViews/Shared/CrudCommon.js"))

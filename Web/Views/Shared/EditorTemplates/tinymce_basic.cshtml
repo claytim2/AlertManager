@@ -1,0 +1,52 @@
+﻿
+<script type="text/javascript">
+    
+    //Tratando o idioma do componente
+    var tinymce_culture = null;
+    if (window.culture === "pt-BR")
+        tinymce_culture = "pt_BR";
+
+
+
+    (function () {
+
+               tinymce.init({
+            mode: "exact",
+            elements: "@ViewData.TemplateInfo.GetFullHtmlFieldId(string.Empty)",
+            //selector: "textarea",
+            theme: "modern",
+            skin: "lightgray",
+            plugins: [
+                "base64_image advlist autolink lists link charmap autoresize",
+                "media contextmenu searchreplace"
+            ],
+            autoresize_max_height: 300,
+            autoresize_min_height: 100,
+            image_caption: false,
+            contextmenu: "link image | bold italic | undo redo ",
+
+            statusbar: false,
+            menubar: false,
+
+            paste_data_images: true,
+
+
+            toolbar_items_size: 'small',
+            toolbar: "undo redo | bold italic | bullist numlist | link base64_image | searchreplace",
+            language: tinymce_culture,
+            auto_focus: "@ViewData.TemplateInfo.GetFullHtmlFieldId(string.Empty)",
+            content_css: window.root + "Resources/plugins/tinymce/editor.css"
+        });
+
+
+        // Prevent bootstrap dialog from blocking focusin
+        $(document).on('focusin', function (e) {
+            if ($(e.target).closest(".mce-window").length) {
+                e.stopImmediatePropagation();
+            }
+        });
+
+    })();
+</script>
+
+@Html.TextArea(string.Empty, ViewData.TemplateInfo.FormattedModelValue)

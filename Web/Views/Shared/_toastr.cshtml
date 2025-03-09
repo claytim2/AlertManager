@@ -1,0 +1,31 @@
+﻿@using DataServices
+@using Model.AbsModels
+@if (TempData["Messages"] != null)
+{
+    <script>
+        $(document).ready(function () {
+            @foreach (var message in TempData["Messages"] as List<MessageModel>)
+            {
+            @:displayMessage('@message.Text', '@message.Title', '@MessageService.MessageType(message.Type)');
+            }
+        });
+
+        var displayMessage = function (message, title, msgType) {
+            toastr.options = {
+                "closeButton": true,
+                "debug": false,
+                "positionClass": "toast-top-right",
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            };
+
+            toastr[msgType](message, title);
+        };
+    </script>
+}

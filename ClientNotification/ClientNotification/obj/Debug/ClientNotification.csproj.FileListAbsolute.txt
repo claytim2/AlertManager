@@ -1,0 +1,10 @@
+C:\Users\Fernandc3\source\repos\AlertManager.Americas.BEL\Clients\ClientNotification\ClientNotification\bin\Debug\JabilNotificationManager.exe.config
+C:\Users\Fernandc3\source\repos\AlertManager.Americas.BEL\Clients\ClientNotification\ClientNotification\bin\Debug\JabilNotificationManager.exe
+C:\Users\Fernandc3\source\repos\AlertManager.Americas.BEL\Clients\ClientNotification\ClientNotification\bin\Debug\JabilNotificationManager.pdb
+C:\Users\Fernandc3\source\repos\AlertManager.Americas.BEL\Clients\ClientNotification\ClientNotification\obj\Debug\ClientNotification.csproj.AssemblyReference.cache
+C:\Users\Fernandc3\source\repos\AlertManager.Americas.BEL\Clients\ClientNotification\ClientNotification\obj\Debug\ClientNotification.FormStart.resources
+C:\Users\Fernandc3\source\repos\AlertManager.Americas.BEL\Clients\ClientNotification\ClientNotification\obj\Debug\JabilNotificationManager.Properties.Resources.resources
+C:\Users\Fernandc3\source\repos\AlertManager.Americas.BEL\Clients\ClientNotification\ClientNotification\obj\Debug\ClientNotification.csproj.GenerateResource.cache
+C:\Users\Fernandc3\source\repos\AlertManager.Americas.BEL\Clients\ClientNotification\ClientNotification\obj\Debug\ClientNotification.csproj.CoreCompileInputs.cache
+C:\Users\Fernandc3\source\repos\AlertManager.Americas.BEL\Clients\ClientNotification\ClientNotification\obj\Debug\JabilNotificationManager.exe
+C:\Users\Fernandc3\source\repos\AlertManager.Americas.BEL\Clients\ClientNotification\ClientNotification\obj\Debug\JabilNotificationManager.pdb

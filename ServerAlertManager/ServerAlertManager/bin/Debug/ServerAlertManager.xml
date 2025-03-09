@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ServerAlertManager</name>
+    </assembly>
+    <members>
+        <member name="F:ServerAlertManager.FormGapAnalysis.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ServerAlertManager.FormGapAnalysis.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ServerAlertManager.FormGapAnalysis.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ServerAlertManager.FormLpaBel.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ServerAlertManager.FormLpaBel.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ServerAlertManager.FormLpaBel.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ServerAlertManager.FormLpaVls.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ServerAlertManager.FormLpaVls.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ServerAlertManager.FormLpaVls.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ServerAlertManager.FormJos.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ServerAlertManager.FormJos.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ServerAlertManager.FormJos.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ServerAlertManager.FormRh.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ServerAlertManager.FormRh.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ServerAlertManager.FormRh.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ServerAlertManager.FormWorkday.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ServerAlertManager.FormWorkday.AutoClosingMessageBox">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ServerAlertManager.FormWorkday.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ServerAlertManager.FormWorkday.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ServerAlertManager.FormWorkday.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ServerAlertManager.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:ServerAlertManager.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.Alarm">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.Aviso">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.clean">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.clock_eMB_icon">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.comunicado">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.error">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.favicon">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.icons8_cancel_25px">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.info">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.ITLogo">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.Jabil_FullColorLogo">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.Nice">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.nope_no">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.Notpossible">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.R">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.Shutdown">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.success">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.Timeisup">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.TimesUp">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.warning">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.Windows_Critical_Stop">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.Windows_Logon">
+            <summary>
+              Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+            </summary>
+        </member>
+        <member name="P:ServerAlertManager.Properties.Resources.workDay">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>

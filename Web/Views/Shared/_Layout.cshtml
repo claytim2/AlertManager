@@ -1,0 +1,245 @@
+﻿@using System.Threading
+@using DataServices
+@using Localization.Web
+@using Web.Business
+
+@{
+    var usuarioLogado = UserAuthService.RetornaUsuarioLogado();
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>@ViewBag.Title - @ResLabels.ProgramName </title> 
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link href="@Url.Content("~/Resources/img/favicon.png")" type="image/png" rel="icon" />
+
+    @Styles.Render("~/Resources/styles")
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="hold-transition skin-yellow sidebar-mini">
+    <div class="wrapper">
+        <!-- Main Header -->
+        <header class="main-header">
+            <!-- Logo -->
+            <a href="@Url.Content("~/")" class="logo">
+                <!-- mini logo for sidebar mini 50x50 pixels -->
+                <div class="logo-mini text-green text-center">
+                    <img src="~/Resources/img/favicon.png" />
+                </div>
+                <!-- logo for regular state and mobile devices -->
+                <span class="logo-lg">
+                    <img src="@Url.Content("~/Resources/img/LogoJabil.png")" alt="" />
+                </span>
+            </a>
+            <!-- Header Navbar -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                </a>
+                <!-- Navbar Right Menu -->
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <div class="navbar-text text-white">
+                        Site: <strong>@usuarioLogado.SiteName</strong>
+                    </div>
+                }
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <img src="@usuarioLogado.Avatar" class="user-image" alt="User Image">
+                                    <span class="hidden-xs">@usuarioLogado.Name</span>
+                                    <i class="caret"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- User image -->
+                                    <li class="user-header">
+                                        <img src="@usuarioLogado.Avatar" class="img-circle" alt="User Image">
+                                        <p>
+                                            @*@usuarioLogado.Name*@
+                                            <small>
+                                                @usuarioLogado.Name  <br />
+                                            </small>
+                                        </p>
+                                    </li>
+                                    <!-- Menu Footer-->
+                                    <li class="user-footer">
+                                        <div class="pull-right">
+                                            <a href="@Url.Action("Logout", "Login")" class="btn btn-default btn-flat">
+                                                <span class="text-danger"><i class="fa fa-power-off"></i>&nbsp;&nbsp; @ResLabels.Logout</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown user user-menu">
+                                <!-- Menu Toggle Button -->
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-question-circle"></i>
+                                </a>
+                                <ul class="dropdown-menu" style="width: 200px">
+                                    <!-- Menu Footer-->
+                                    @if (File.Exists(Server.MapPath("~/Manual/UserManual_" + Thread.CurrentThread.CurrentCulture + ".pdf")))
+                                    {
+                                        <li class="user-footer">
+                                            <div>
+                                                <a target="_blank" href="@Url.Content("~/Manual/UserManual_" + Thread.CurrentThread.CurrentCulture + ".pdf")"><i class="fa fa-book"></i>&nbsp;&nbsp; @ResLabels.UserManual</a>
+                                            </div>
+                                        </li>
+                                    }
+                                    <li class="user-footer">
+                                        <div>
+                                            <a href="@Url.Action("Index","AboutConfiguration")"><i class="fa fa-question-circle"></i>&nbsp;&nbsp; @ResLabels.About</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        }
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+
+
+                <!-- Sidebar Menu -->
+                <ul class="sidebar-menu">
+
+                    <li class="text-center program-name">
+                        <h4>
+                            <span>
+                                <strong>
+                                    @ResLabels.ProgramName
+                                </strong>
+                                <br />
+                                <small>@("v" + ViewContext.Controller.GetType().Assembly.GetName().Version)</small>
+                            </span>
+                        </h4>
+                    </li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        @Html.Raw(MenuBuilderService.MenuMaker())
+                    }
+                </ul><!-- /.sidebar-menu -->
+            </section>
+
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1>
+                    @{
+                        if (!string.IsNullOrEmpty(ViewBag.Icon))
+                        {
+                            @Html.Raw("<i class='fa " + ViewBag.Icon + "'></i>&nbsp;")
+                        }
+                    }
+                    @ViewBag.Title
+                    @if (!string.IsNullOrEmpty(ViewBag.SubTitle))
+                    {
+                        <small>@ViewBag.SubTitle</small>
+                    }
+
+                    @if (!string.IsNullOrEmpty(ViewBag.VideoTutorialUrl))
+                    {
+                        <span class="pull-right">
+                            <button type="button" id="videotutorialbutton" class="btn btn-primary btn-sm launch-videomodal" data-videosrc="@ViewBag.VideoTutorialUrl">
+                                @ResLabels.VideoTutorialButton &nbsp;&nbsp;<i class="fa fa-play"></i>
+                            </button>
+                        </span>
+                    }
+                </h1>
+
+                @*@Html.Raw(BreadCrumb.Display())*@
+
+                <hr />
+            </section>
+            <!-- Main content -->
+            <section class="content">
+                @RenderBody()
+            </section><!-- /.content -->
+        </div><!-- /.content-wrapper -->
+        <!-- Main Footer -->
+        <footer class="main-footer">
+            <!-- To the right -->
+            <div class="pull-right hidden-xs">
+                @ResLabels.DevelopedBy <strong>BEL IT APPLICATIONS</strong>
+            </div>
+            <!-- Default to the left -->
+            <strong>Copyright &copy; @DateTime.Now.Year <a href="http://www.jabil.com">Jabil</a>.</strong> @ResLabels.AllRightsReserved.
+
+        </footer>
+    </div><!-- ./wrapper -->
+
+    <!-- MODAL DO VIDEO TUTORIAL -->
+    <div class="modal fade" id="modal-video" tabindex="-1" role="dialog" aria-labelledby="modal-video-label">
+        <div class="modal-dialog" role="document">
+            <div id="modal-video-container"></div>
+        </div>
+    </div>
+
+    <!-- REQUIRED JS SCRIPTS -->
+    @Scripts.Render("~/resources/js")
+
+    @Html.Partial("_toastr")
+
+    @*@RenderSection("datatable", required: false)*@
+    <script>
+        window.culture = "@Thread.CurrentThread.CurrentCulture";
+        window.root = "@Url.Content("~")";
+        window.controller = "@HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString()";
+        bootbox.setDefaults({ locale: window.culture });
+    </script>
+
+    @Html.Raw(WebFunctions.JavascriptFileImport("~/Resources/scriptViews/Shared/Layout.js"))
+    @Html.Raw(WebFunctions.JavascriptFileImport("~/Resources/scripts/principal.js"))
+
+    @RenderSection("scripts", required: false)
+
+    <!-- JS SECTIONS -->
+    <script>
+        // Instance the tour
+        var tour = new Tour({
+            name: "@(ResLabels.ProgramName.RemoveAccents().RemoveSpecialCharacters())_VideoTutorial",
+            //storage: false,
+            template: "<div class='popover tour'><div class='arrow'></div><h3 class='popover-title'></h3><div class='popover-content'></div><div class='popover-navigation'><button class='btn btn-default btn-sm' data-role='end'>@ResLabels.GotIt!</button></div></div>",
+            steps: [
+                {
+                    element: "#videotutorialbutton",
+                    title: "@ResLabels.Attention !",
+                    content: "@ResLabels.VideoTutorialButtonHelp !",
+                    smartPlacement: true,
+                    backdrop: true
+                }
+            ]
+        });
+
+        // Initialize the tour
+        tour.init();
+
+        // Start the tour
+        tour.start();
+    </script>
+
+</body>
+</html>
